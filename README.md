@@ -6,6 +6,13 @@ A smart health care monitoring system built with an ESP32, multiple biomedical a
 
 The ESP32 reads health and motion data, publishes it to a public MQTT broker, and Node-RED subscribes to the same topic to save the incoming JSON payload as CSV for later analysis and AI/ML experiments.
 
+<table>
+  <tr>
+    <td><img src="assets/1.png" alt="1" width="100%"></td>
+    <td><img src="assets/2.png" alt="2" width="100%"></td>
+  </tr>
+</table>
+
 ## Features
 
 - Real-time sensor monitoring from health, motion, environmental, and GPS modules.
@@ -45,3 +52,10 @@ Please follow the pin configuration defined in `esp32.ino` during hardware assem
 3. The JSON payload is published to MQTT topic `ahmm`.
 4. Node-RED receives the message and appends it to a CSV file.
 5. The CSV dataset can then be used for machine learning and health analysis.
+
+<table>
+  <tr>
+    <td><img src="assets/3.png" alt="3" width="100%"></td>
+    <td><img src="assets/4.png" alt="4" width="100%"></td>
+  </tr>
+</table>
